@@ -7,7 +7,7 @@ log_file_path, view = ARGV
 pages = LogFileParser.new(log_file_path:).log_data
 
 if view.eql?('total')
-  puts 'Total views \n'
+  puts 'Total views'
 
   pages.by_total_views.each do |page|
     puts "#{page.path} #{page.total_views} visits"
@@ -17,7 +17,7 @@ if view.eql?('total')
 end
 
 if view.eql?('unique')
-  puts 'Unique views \n'
+  puts 'Unique views'
 
   pages.by_unique_views.each do |page|
     puts "#{page.path} #{page.unique_views} unique views"
