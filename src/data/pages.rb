@@ -19,11 +19,11 @@ class Pages
   end
 
   def by_total_views
-    pages.values.sort_by(&:total_views).reverse
+    pages.values.sort_by { |page| [-page.total_views, page.path] }
   end
 
   def by_unique_views
-    pages.values.sort_by(&:unique_views).reverse
+    pages.values.sort_by { |page| [-page.unique_views, page.path] }
   end
 
   private
