@@ -29,6 +29,6 @@ class LogFileParser
   end
 
   def file_loader
-    LogFileReader.new(log_file_path:)
+    @file_loader ||= LogFileReader.new(log_file_path:)
   end
 end
