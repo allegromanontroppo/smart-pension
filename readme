@@ -15,3 +15,8 @@ Where view_mode is either 'total' or 'unique'.
 or
 
 `.\parser.rb .\webserver.log unique`
+
+#### Testing
+
+Simply run `rspec` in order to run the code's unit tests.
+You can install rspec with `bundle`.
